@@ -1,0 +1,16 @@
+title: First year spanish
+description: 'First year Spanish '
+template:
+  repo: first-year-spanish-template
+  name: first-year-spanish
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
